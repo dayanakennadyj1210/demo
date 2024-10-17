@@ -1,0 +1,32 @@
+Monolithic configuration:-
+
+#!/bin/bash
+# Use this for your user data (script from top to bottom)
+# install httpd (Linux 2 version)
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Welcome to KGM from . This is Dayana</h1>" > /var/www/html/index.html
+
+Microservice configuration:-
+
+[[#!/bin/bash
+# Use this for your user data (script from top to bottom)
+# install httpd (Linux 2 version)
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+mkdir /var/www/html/mobile
+echo "<h1> List of Mobiles are displaying now for your reference</h1>" > /var/www/html/mobile/index.html
+
+#!/bin/bash
+# Use this for your user data (script from top to bottom)
+# install httpd (Linux 2 version)
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+mkdir /var/www/html/cloths
+echo "<h1> List of Cloths are displaying now </h1>" > /var/www/html/cloths/index.html]]
